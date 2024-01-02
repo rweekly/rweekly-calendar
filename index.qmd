@@ -1,0 +1,84 @@
+---
+title: "RWeekly Curation Calendar"
+format: 
+  dashboard: 
+    logo: "assets/icon-256x256.png"
+
+execute: 
+  echo: false
+---
+
+
+```{r}
+#| label: setup
+#| include: false
+library(dplyr)
+library(targets)
+library(toastui)
+library(epoxy)
+library(reactable)
+library(htmltools)
+
+tar_source("R/curator_table.R")
+```
+
+```{css}
+.imageclass {
+  height: 1.3rem;
+}
+```
+
+
+```{r}
+#| label: load-cal-target
+#| include: false
+tar_load(c(processed_cal_data, rweekly_issue_count))
+tar_source()
+```
+
+# Schedule
+
+## Row
+
+```{r}
+#| content: valuebox
+#| title: "Curators"
+#| icon: person-workspace
+#| color: primary
+list(
+  value = length(unique(processed_cal_data$name))
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Issues Curated"
+#| icon: newspaper
+#| color: primary
+list(
+  value = rweekly_issue_count
+)
+```
+
+## Row
+
+### Column {width="50%"}
+
+```{r}
+toastui::calendar(
+  data = processed_cal_data,
+  view = "month",
+  navigation = TRUE
+) |>
+  toastui::cal_month_options(
+    startDayOfWeek = 1,
+    narrowWeekend = FALSE
+  )
+```
+
+### Column {width="50%"}
+
+
+```{r}
+curator_table(processed_cal_data)
+```

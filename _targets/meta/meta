@@ -1,0 +1,9 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|d9ece2baff564189|||||||||||||||
+cal_data|stem|e4a3faed7b41880f|d58e2bda2de15640|8ab4501aba36311d|-317128166||t19723.206951505s|16392bcf901b374b|4564|rds|local|vector|||2.059||
+create_curator_df|function|6ba6040f4379393e|||||||||||||||
+get_cal_data|function|a7225a2cf93a7a9b|||||||||||||||
+get_issue_count|function|c877bc33bf08b71c|||||||||||||||
+process_cal_data|function|175ae82a9de505e9|||||||||||||||
+processed_cal_data|stem|9dfc3d54cbd6ac9e|16c2516f523d1243|802a4b37238ae9a6|-1344579760||t19724.2324198849s|32872f5c75b7aa55|1413|rds|local|vector|||0.027||
+rweekly_issue_count|stem|f9f62f5d9321a77b|c0af858e877f2141|c2c214eddf01e67c|1520343760||t19724.2145136707s|44989414465ff33d|49|rds|local|vector|||1.031||
