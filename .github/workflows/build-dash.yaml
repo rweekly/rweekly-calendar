@@ -36,9 +36,9 @@ jobs:
 
     - name: Create and populate .Renviron file
       run: |
-        echo CALDAV_URL="${{ secrets.CALDAV_URL }}" >> ~/.Renviron
-        echo NEXTCLOUD_USER="${{ secrets.NEXTCLOUD_USER }}" >> ~/.Renviron
-        echo NEXTCLOUD_PASSWORD="${{ secrets.NEXTCLOUD_PASSWORD }}" >> ~/.Renviron
+        echo CALDAV_URL="$CALDAV_URL" >> ~/.Renviron
+        echo NEXTCLOUD_USER="$NEXTCLOUD_USER" >> ~/.Renviron
+        echo NEXTCLOUD_PASSWORD="$NEXTCLOUD_PASSWORD" >> ~/.Renviron
         shell: bash
       env:
         CALDAV_URL: ${{ secrets.CALDAV_URL }}
