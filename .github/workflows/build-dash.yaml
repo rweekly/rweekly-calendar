@@ -44,6 +44,10 @@ jobs:
 
     - name: Build Pipeline and Dashboard
       run: Rscript -e 'targets::tar_make()'
+      env:
+        CALDAV_URL: ${{ secrets.CALDAV_URL }}
+        NEXTCLOUD_USER: ${{ secrets.NEXTCLOUD_USER }}
+        NEXTCLOUD_PASSWORD: ${{ secrets.NEXTCLOUD_PASSWORD }}
 
     - name: Was the dashboard updated?
       id: dashboard-updated
