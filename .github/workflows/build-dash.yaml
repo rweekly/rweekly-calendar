@@ -5,6 +5,8 @@ on:
     paths:
       - '**.qmd'
       - '**.R'
+  schedule:
+      - cron: "03 04,16 * * *"
   workflow_dispatch:
 
 name: build-dash
