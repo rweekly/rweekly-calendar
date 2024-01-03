@@ -34,6 +34,17 @@ jobs:
 
     - uses: r-lib/actions/setup-renv@v2
 
+    - name: Create and populate .Renviron file
+      run: |
+        echo CALDAV_URL="${{ secrets.CALDAV_URL }}" >> ~/.Renviron
+        echo NEXTCLOUD_USER="${{ secrets.NEXTCLOUD_USER }}" >> ~/.Renviron
+        echo NEXTCLOUD_PASSWORD="${{ secrets.NEXTCLOUD_PASSWORD }}" >> ~/.Renviron
+        shell: bash
+      env:
+        CALDAV_URL: ${{ secrets.CALDAV_URL }}
+        NEXTCLOUD_USER: ${{ secrets.NEXTCLOUD_USER }}
+        NEXTCLOUD_PASSWORD: ${{ secrets.NEXTCLOUD_PASSWORD }}
+
     - name: Cache targets data
       uses: actions/cache@v3
       with:
