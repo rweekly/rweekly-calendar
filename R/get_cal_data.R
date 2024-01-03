@@ -1,7 +1,7 @@
 get_cal_data <- function() {
   cal_data <-
     caldav::caldav_get_all_simple_auth(
-      url = Sys.getenv("CALDAV_URL"),
+      url = "https://nextcloud.rweekly.org/remote.php/dav/calendars/admin/curation-schedule/",
       user = Sys.getenv("NEXTCLOUD_USER"),
       password =  Sys.getenv("NEXTCLOUD_PASSWORD")
     )
