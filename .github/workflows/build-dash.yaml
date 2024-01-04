@@ -58,17 +58,7 @@ jobs:
           echo "has_update=true" >> "$GITHUB_OUTPUT"
         fi
 
-    - name: Push Built Dashboard
-      if: steps.dashboard-updated.outputs.has_update == 'true'
-      run: |
-          git config --global user.name 'gha update bot'
-          git config --global user.email 'rpodcast@users.noreply.github.com'
-          git add --all
-          git commit --allow-empty -m "[auto] Build Dashboard $(TZ=America/New_York date +'%Y-%m-%d %H:%M')"
-          git push
-
     - name: Render and Publish to GH Pages
-      if: steps.dashboard-updated.outputs.has_update == 'true'
       uses: quarto-dev/quarto-actions/publish@v2
       with:
         target: gh-pages
