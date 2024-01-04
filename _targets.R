@@ -33,10 +33,5 @@ list(
   tar_target(
     processed_cal_data,
     process_cal_data(cal_data)
-  ),
-  # Render Quarto Dashboard
-  tar_quarto(
-    quarto_dashboard,
-    "index.qmd"
   )
 )
