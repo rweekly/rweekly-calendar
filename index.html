@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.533">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>RWeekly Curation Calendar</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-dashboard/quarto-dashboard.js"></script>
+<script src="site_libs/quarto-dashboard/stickythead.js"></script>
+<script src="site_libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
+<script src="site_libs/quarto-dashboard/pdfmake.min.js" kdttablesentinel="true"></script>
+<script src="site_libs/quarto-dashboard/vfs_fonts.js" kdttablesentinel="true"></script>
+<script src="site_libs/quarto-dashboard/web-components.js" type="module"></script>
+<script src="site_libs/quarto-dashboard/components.js"></script>
+<link href="site_libs/quarto-dashboard/datatables.min.css" rel="stylesheet" kdttablesentinel="true">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/calendar-binding-0.3.0/calendar.js"></script>
+<link href="site_libs/bttn-0.2.4/bttn.min.css" rel="stylesheet">
+<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="site_libs/react-18.2.0/react.min.js"></script>
+<script src="site_libs/react-18.2.0/react-dom.min.js"></script>
+<script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
+<link href="site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
+<script src="site_libs/reactable-binding-0.4.4/reactable.js"></script>
+
+
+</head>
+
+<body class="quarto-dashboard dashboard-fill fullcontent">
+
+<header id="quarto-dashboard-header">
+<nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
+  <div class="navbar-container container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+
+
+    <div class="navbar-brand-container">       
+    <a href="#"><img src="assets/icon-256x256.png" alt="" class="navbar-logo d-inline-block"></a>
+      <div class="navbar-title">
+        <div class="navbar-title-text"><a href="#">RWeekly Curation Calendar</a></div>
+        
+        
+      </div>
+    </div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-schedule" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#schedule" data-scrolling="false" href="#schedule" aria-controls="schedule" aria-selected="true"><span class="nav-link-text">Schedule</span></a></li></ul></div></div>
+</nav>
+</header>
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+<!-- main -->
+
+<div class="cell bslib-grid-item html-fill-item">
+<style type="text/css">
+.imageclass {
+  height: 1.3rem;
+}
+</style>
+</div>
+<div class="bslib-grid-item html-fill-item tab-content bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div id="schedule" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-schedule">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box bg-primary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-person-workspace"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Curators
+</p>
+<p class="value-box-value">
+8
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card valuebox cell html-fill-item html-fill-container bslib-card bslib-value-box bg-primary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-newspaper"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Issues Curated
+</p>
+<p class="value-box-value">
+378
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 50fr) minmax(3em, 50fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="toastui-calendar calendar html-widget html-fill-item html-fill-container" style="width:100%;height:600px;">
+<div id="htmlwidget-fa85045dc8dd480b15ee_menu" class="html-fill-item html-fill-container">
+<span id="htmlwidget-fa85045dc8dd480b15ee_menu_navi">
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-fa85045dc8dd480b15ee_today">Today</button>
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-fa85045dc8dd480b15ee_prev">
+<i class="fa fa-chevron-left"></i>
+</button>
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-fa85045dc8dd480b15ee_next">
+<i class="fa fa-chevron-right"></i>
+</button>
+</span>
+<span id="htmlwidget-fa85045dc8dd480b15ee_renderRange" class="render-range"></span>
+</div>
+<br>
+<div id="htmlwidget-fa85045dc8dd480b15ee" style="width:100%;height:600px;" class="calendar html-widget html-fill-item html-fill-container" width="100%" height="600px"></div>
+</div>
+<script type="application/json" data-for="htmlwidget-fa85045dc8dd480b15ee">{"x":{"options":{"defaultView":"month","useDetailPopup":true,"useFormPopup":false,"isReadOnly":true,"usageStatistics":false,"month":{"startDayOfWeek":1,"narrowWeekend":false}},"schedules":[{"category":"allday","dueDateClass":"","id":"schedule18fbb83c4bfb41500c5f2b8f","calendarId":"1","name":"Eric Nantz","backup_flag":false,"year":2024,"title":"2024-W02 (Eric Nantz)","start":"2024-01-01","end":"2024-01-07","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule2dbd6052bcfa5f05196a6624","calendarId":"1","name":"Colin Fay","backup_flag":true,"year":2024,"title":"BACKUP 2024-W02 (Colin Fay)","start":"2024-01-01","end":"2024-01-07","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"scheduled696615cb6cdbfe126a0d8d9","calendarId":"1","name":"Colin Fay","backup_flag":false,"year":2024,"title":"2024-W03 (Colin Fay)","start":"2024-01-08","end":"2024-01-14","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule6051677d93cc53a249fded56","calendarId":"1","name":"Sam Parmar","backup_flag":true,"year":2024,"title":"BACKUP 2024-W03 (Sam Parmar)","start":"2024-01-08","end":"2024-01-14","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulea696e6aeb60b3bd17d498254","calendarId":"1","name":"Sam Parmar","backup_flag":false,"year":2024,"title":"2024-W04 (Sam Parmar)","start":"2024-01-15","end":"2024-01-21","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule0df04d033985547d168a61c3","calendarId":"1","name":"Batool Almarzouq","backup_flag":true,"year":2024,"title":"BACKUP 2024-W04 (Batool Almarzouq)","start":"2024-01-15","end":"2024-01-21","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedulead6294257d4c00d800f498a3","calendarId":"1","name":"Batool Almarzouq","backup_flag":false,"year":2024,"title":"2024-W05 (Batool Almarzouq)","start":"2024-01-22","end":"2024-01-28","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"scheduleaa5091f0d988adbe291a6f32","calendarId":"1","name":"Ryo Nakagawara","backup_flag":true,"year":2024,"title":"BACKUP 2024-W05 (Ryo Nakagawara)","start":"2024-01-22","end":"2024-01-28","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduleaeb3d18908e0910ff62de437","calendarId":"1","name":"Ryo Nakagawara","backup_flag":false,"year":2024,"title":"2024-W06 (Ryo Nakagawara)","start":"2024-01-29","end":"2024-02-04","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulef937443221eb5923373cdda6","calendarId":"1","name":"Jon Calder","backup_flag":true,"year":2024,"title":"BACKUP 2024-W06 (Jon Calder)","start":"2024-01-29","end":"2024-02-04","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduleb0159688663b9c589bab9600","calendarId":"1","name":"Jon Calder","backup_flag":false,"year":2024,"title":"2024-W07 (Jon Calder)","start":"2024-02-05","end":"2024-02-11","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulef19b5056df19268002db06f7","calendarId":"1","name":"Tony ElHabr","backup_flag":true,"year":2024,"title":"BACKUP 2024-W07 (Tony ElHabr)","start":"2024-02-05","end":"2024-02-11","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedulee7c96611a2810d69aed73db1","calendarId":"1","name":"Jonathan Carroll","backup_flag":true,"year":2024,"title":"BACKUP 2024-W08 (Jonathan Carroll)","start":"2024-02-12","end":"2024-02-18","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule6d50d3f6c00ad7d648c95ed2","calendarId":"1","name":"Tony ElHabr","backup_flag":false,"year":2024,"title":"2024-W08 (Tony ElHabr)","start":"2024-02-12","end":"2024-02-18","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule441e4f32aef9e35a7e923f05","calendarId":"1","name":"Jonathan Carroll","backup_flag":false,"year":2024,"title":"2024-W09 (Jonathan Carroll)","start":"2024-02-19","end":"2024-02-25","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule7fa22f6885b545b104178711","calendarId":"1","name":"Eric Nantz","backup_flag":true,"year":2024,"title":"BACKUP 2024-W09 (Eric Nantz)","start":"2024-02-19","end":"2024-02-25","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduled8c35f7916b72d44125b682b","calendarId":"1","name":"Eric Nantz","backup_flag":false,"year":2024,"title":"2024-W10 (Eric Nantz)","start":"2024-02-26","end":"2024-03-03","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule785fb991861241be9a2030a8","calendarId":"1","name":"Colin Fay","backup_flag":true,"year":2024,"title":"BACKUP 2024-W10 (Colin Fay)","start":"2024-02-26","end":"2024-03-03","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedulee8674857f354b8e915dc52d1","calendarId":"1","name":"Colin Fay","backup_flag":false,"year":2024,"title":"2024-W11 (Colin Fay)","start":"2024-03-04","end":"2024-03-10","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule2c95b808246b9b7043a09aae","calendarId":"1","name":"Sam Parmar","backup_flag":true,"year":2024,"title":"BACKUP 2024-W11 (Sam Parmar)","start":"2024-03-04","end":"2024-03-10","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduled57d08a8170c0999377841f4","calendarId":"1","name":"Sam Parmar","backup_flag":false,"year":2024,"title":"2024-W12 (Sam Parmar)","start":"2024-03-11","end":"2024-03-17","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule05fc737dc871df04c9bd83ab","calendarId":"1","name":"Batool Almarzouq","backup_flag":true,"year":2024,"title":"BACKUP 2024-W12 (Batool Almarzouq)","start":"2024-03-11","end":"2024-03-17","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedulecee04fc397f3fca703c25d76","calendarId":"1","name":"Batool Almarzouq","backup_flag":false,"year":2024,"title":"2024-W13 (Batool Almarzouq)","start":"2024-03-18","end":"2024-03-24","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedule0c7bf68ce032881df7a28b85","calendarId":"1","name":"Ryo Nakagawara","backup_flag":true,"year":2024,"title":"BACKUP 2024-W13 (Ryo Nakagawara)","start":"2024-03-18","end":"2024-03-24","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule1067df1e58ebb4047b465bb2","calendarId":"1","name":"Ryo Nakagawara","backup_flag":false,"year":2024,"title":"2024-W14 (Ryo Nakagawara)","start":"2024-03-25","end":"2024-03-31","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule005cba4459658512bed1ecc6","calendarId":"1","name":"Jon Calder","backup_flag":true,"year":2024,"title":"BACKUP 2024-W14 (Jon Calder)","start":"2024-03-25","end":"2024-03-31","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulefcef245963185ff1675e0909","calendarId":"1","name":"Jon Calder","backup_flag":false,"year":2024,"title":"2024-W15 (Jon Calder)","start":"2024-04-01","end":"2024-04-07","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule712f4992254ed1aa11bb411a","calendarId":"1","name":"Tony ElHabr","backup_flag":true,"year":2024,"title":"BACKUP 2024-W15 (Tony ElHabr)","start":"2024-04-01","end":"2024-04-07","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedulecfbfd7b3c5d3283b57db4040","calendarId":"1","name":"Tony ElHabr","backup_flag":false,"year":2024,"title":"2024-W16 (Tony ElHabr)","start":"2024-04-08","end":"2024-04-14","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule12ea2b52fe8ff8ed6c08dc87","calendarId":"1","name":"Jonathan Carroll","backup_flag":true,"year":2024,"title":"BACKUP 2024-W16 (Jonathan Carroll)","start":"2024-04-08","end":"2024-04-14","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedulef133dfeb33809798878abd97","calendarId":"1","name":"Jonathan Carroll","backup_flag":false,"year":2024,"title":"2024-W17 (Jonathan Carroll)","start":"2024-04-15","end":"2024-04-21","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule6fc8a7788906852c69edab4d","calendarId":"1","name":"Eric Nantz","backup_flag":true,"year":2024,"title":"BACKUP 2024-W17 (Eric Nantz)","start":"2024-04-15","end":"2024-04-21","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduleb4427cbd94bf61f6d0e44908","calendarId":"1","name":"Eric Nantz","backup_flag":false,"year":2024,"title":"2024-W18 (Eric Nantz)","start":"2024-04-22","end":"2024-04-28","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule50d8505deaaf453c823cb646","calendarId":"1","name":"Colin Fay","backup_flag":true,"year":2024,"title":"BACKUP 2024-W18 (Colin Fay)","start":"2024-04-22","end":"2024-04-28","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule00f6d023bd23e9f33e3db93b","calendarId":"1","name":"Colin Fay","backup_flag":false,"year":2024,"title":"2024-W19 (Colin Fay)","start":"2024-04-29","end":"2024-05-05","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule688103b3f229f3e3b8588bba","calendarId":"1","name":"Sam Parmar","backup_flag":true,"year":2024,"title":"BACKUP 2024-W19 (Sam Parmar)","start":"2024-04-29","end":"2024-05-05","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule489e09deb64f9c12790064af","calendarId":"1","name":"Sam Parmar","backup_flag":false,"year":2024,"title":"2024-W20 (Sam Parmar)","start":"2024-05-06","end":"2024-05-12","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule0eb513fe78d1105085211e8a","calendarId":"1","name":"Batool Almarzouq","backup_flag":true,"year":2024,"title":"BACKUP 2024-W20 (Batool Almarzouq)","start":"2024-05-06","end":"2024-05-12","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedule651d3b8632990ef257b3f35e","calendarId":"1","name":"Batool Almarzouq","backup_flag":false,"year":2024,"title":"2024-W21 (Batool Almarzouq)","start":"2024-05-13","end":"2024-05-19","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedulea49c7027c0a88f6e3ff771e6","calendarId":"1","name":"Ryo Nakagawara","backup_flag":true,"year":2024,"title":"BACKUP 2024-W21 (Ryo Nakagawara)","start":"2024-05-13","end":"2024-05-19","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule8a010cc18cdeceffe12ca70b","calendarId":"1","name":"Ryo Nakagawara","backup_flag":false,"year":2024,"title":"2024-W22 (Ryo Nakagawara)","start":"2024-05-20","end":"2024-05-26","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule91d31bdc6b6f2a15f1bdb34b","calendarId":"1","name":"Jon Calder","backup_flag":true,"year":2024,"title":"BACKUP 2024-W22 (Jon Calder)","start":"2024-05-20","end":"2024-05-26","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule0caf2c30b80aecd2ba1f29a8","calendarId":"1","name":"Jon Calder","backup_flag":false,"year":2024,"title":"2024-W23 (Jon Calder)","start":"2024-05-27","end":"2024-06-02","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulefa185f3ad7e7865fae83f04d","calendarId":"1","name":"Tony ElHabr","backup_flag":true,"year":2024,"title":"BACKUP 2024-W23 (Tony ElHabr)","start":"2024-05-27","end":"2024-06-02","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"scheduled560d092ad33a68a7bc73ec3","calendarId":"1","name":"Tony ElHabr","backup_flag":false,"year":2024,"title":"2024-W24 (Tony ElHabr)","start":"2024-06-03","end":"2024-06-09","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule33f5b0ee9ede5a5cc19fd951","calendarId":"1","name":"Jonathan Carroll","backup_flag":true,"year":2024,"title":"BACKUP 2024-W24 (Jonathan Carroll)","start":"2024-06-03","end":"2024-06-09","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule6f02eae572a8b057e83be27a","calendarId":"1","name":"Jonathan Carroll","backup_flag":false,"year":2024,"title":"2024-W25 (Jonathan Carroll)","start":"2024-06-10","end":"2024-06-16","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule921c10e20ef0a1e64f4eac41","calendarId":"1","name":"Eric Nantz","backup_flag":true,"year":2024,"title":"BACKUP 2024-W25 (Eric Nantz)","start":"2024-06-10","end":"2024-06-16","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulef7b2198050339abbfc9e6cd7","calendarId":"1","name":"Eric Nantz","backup_flag":false,"year":2024,"title":"2024-W26 (Eric Nantz)","start":"2024-06-17","end":"2024-06-23","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduleffe874e2ff398fc0312c60e9","calendarId":"1","name":"Colin Fay","backup_flag":true,"year":2024,"title":"BACKUP 2024-W26 (Colin Fay)","start":"2024-06-17","end":"2024-06-23","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule60ab770b19cf354a50a7abb9","calendarId":"1","name":"Sam Parmar","backup_flag":true,"year":2024,"title":"BACKUP 2024-W27 (Sam Parmar)","start":"2024-06-24","end":"2024-06-30","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduleae435dee7e44ce9f0b05cb3c","calendarId":"1","name":"Colin Fay","backup_flag":false,"year":2024,"title":"2024-W27 (Colin Fay)","start":"2024-06-24","end":"2024-06-30","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule0871aec3d9e944bbbfd72111","calendarId":"1","name":"Sam Parmar","backup_flag":false,"year":2024,"title":"2024-W28 (Sam Parmar)","start":"2024-07-01","end":"2024-07-07","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduleb0dea7ea4069584b31a6c138","calendarId":"1","name":"Batool Almarzouq","backup_flag":true,"year":2024,"title":"BACKUP 2024-W28 (Batool Almarzouq)","start":"2024-07-01","end":"2024-07-07","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedulee212ee0efa22a8ae0b0cceac","calendarId":"1","name":"Batool Almarzouq","backup_flag":false,"year":2024,"title":"2024-W29 (Batool Almarzouq)","start":"2024-07-08","end":"2024-07-14","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedule68b77663ed6abb0c1eab2ccf","calendarId":"1","name":"Ryo Nakagawara","backup_flag":true,"year":2024,"title":"BACKUP 2024-W29 (Ryo Nakagawara)","start":"2024-07-08","end":"2024-07-14","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule9a27f5c20db660523785b039","calendarId":"1","name":"Ryo Nakagawara","backup_flag":false,"year":2024,"title":"2024-W30 (Ryo Nakagawara)","start":"2024-07-15","end":"2024-07-21","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule03b0005061106c4e849bf9a6","calendarId":"1","name":"Jon Calder","backup_flag":true,"year":2024,"title":"BACKUP 2024-W30 (Jon Calder)","start":"2024-07-15","end":"2024-07-21","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulec3ed278f7fcb2d81c35b1853","calendarId":"1","name":"Jon Calder","backup_flag":false,"year":2024,"title":"2024-W31 (Jon Calder)","start":"2024-07-22","end":"2024-07-28","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule71e512273324adcfce231934","calendarId":"1","name":"Tony ElHabr","backup_flag":true,"year":2024,"title":"BACKUP 2024-W31 (Tony ElHabr)","start":"2024-07-22","end":"2024-07-28","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule94b6ad6d7fe38193ae819028","calendarId":"1","name":"Tony ElHabr","backup_flag":false,"year":2024,"title":"2024-W32 (Tony ElHabr)","start":"2024-07-29","end":"2024-08-04","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule57ab114e50b20efcac8fc5e7","calendarId":"1","name":"Jonathan Carroll","backup_flag":true,"year":2024,"title":"BACKUP 2024-W32 (Jonathan Carroll)","start":"2024-07-29","end":"2024-08-04","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule25d19d864cea93203f218e3b","calendarId":"1","name":"Jonathan Carroll","backup_flag":false,"year":2024,"title":"2024-W33 (Jonathan Carroll)","start":"2024-08-05","end":"2024-08-11","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule24379cc9c6d25137ccb175a2","calendarId":"1","name":"Eric Nantz","backup_flag":true,"year":2024,"title":"BACKUP 2024-W33 (Eric Nantz)","start":"2024-08-05","end":"2024-08-11","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulec600192b48f76b0a8a7486fa","calendarId":"1","name":"Eric Nantz","backup_flag":false,"year":2024,"title":"2024-W34 (Eric Nantz)","start":"2024-08-12","end":"2024-08-18","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule20d40c09550b7aeca80ed35e","calendarId":"1","name":"Colin Fay","backup_flag":true,"year":2024,"title":"BACKUP 2024-W34 (Colin Fay)","start":"2024-08-12","end":"2024-08-18","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule77a09679ec889c8a45e7ba89","calendarId":"1","name":"Colin Fay","backup_flag":false,"year":2024,"title":"2024-W35 (Colin Fay)","start":"2024-08-19","end":"2024-08-25","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule5599e48a7e62f952060f72bb","calendarId":"1","name":"Sam Parmar","backup_flag":true,"year":2024,"title":"BACKUP 2024-W35 (Sam Parmar)","start":"2024-08-19","end":"2024-08-25","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulee2bdfcc8a0210252eafae94c","calendarId":"1","name":"Sam Parmar","backup_flag":false,"year":2024,"title":"2024-W36 (Sam Parmar)","start":"2024-08-26","end":"2024-09-01","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulef6206ac807d12c8982371f35","calendarId":"1","name":"Batool Almarzouq","backup_flag":true,"year":2024,"title":"BACKUP 2024-W36 (Batool Almarzouq)","start":"2024-08-26","end":"2024-09-01","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedule123a46d42ba3f17c077b18a7","calendarId":"1","name":"Ryo Nakagawara","backup_flag":true,"year":2024,"title":"BACKUP 2024-W37 (Ryo Nakagawara)","start":"2024-09-02","end":"2024-09-08","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule7e7b88a3454c11ccf26d8fd6","calendarId":"1","name":"Batool Almarzouq","backup_flag":false,"year":2024,"title":"2024-W37 (Batool Almarzouq)","start":"2024-09-02","end":"2024-09-08","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedule471962d79119596414dde590","calendarId":"1","name":"Ryo Nakagawara","backup_flag":false,"year":2024,"title":"2024-W38 (Ryo Nakagawara)","start":"2024-09-09","end":"2024-09-15","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule9ab26b019261a106fea86f89","calendarId":"1","name":"Jon Calder","backup_flag":true,"year":2024,"title":"BACKUP 2024-W38 (Jon Calder)","start":"2024-09-09","end":"2024-09-15","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule14f9578af9adee394a6b1193","calendarId":"1","name":"Jon Calder","backup_flag":false,"year":2024,"title":"2024-W39 (Jon Calder)","start":"2024-09-16","end":"2024-09-22","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulea47549638976e083634a8440","calendarId":"1","name":"Tony ElHabr","backup_flag":true,"year":2024,"title":"BACKUP 2024-W39 (Tony ElHabr)","start":"2024-09-16","end":"2024-09-22","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule88278fa63b3658ca55c51cb2","calendarId":"1","name":"Tony ElHabr","backup_flag":false,"year":2024,"title":"2024-W40 (Tony ElHabr)","start":"2024-09-23","end":"2024-09-29","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule2863a7625131ad8f919fa2d6","calendarId":"1","name":"Jonathan Carroll","backup_flag":true,"year":2024,"title":"BACKUP 2024-W40 (Jonathan Carroll)","start":"2024-09-23","end":"2024-09-29","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"scheduleba8477a41d5d850c77774350","calendarId":"1","name":"Jonathan Carroll","backup_flag":false,"year":2024,"title":"2024-W41 (Jonathan Carroll)","start":"2024-09-30","end":"2024-10-06","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"schedule44495c7a012228ad1e9c6a55","calendarId":"1","name":"Eric Nantz","backup_flag":true,"year":2024,"title":"BACKUP 2024-W41 (Eric Nantz)","start":"2024-09-30","end":"2024-10-06","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"scheduled71f9e33baf12b185f863db4","calendarId":"1","name":"Eric Nantz","backup_flag":false,"year":2024,"title":"2024-W42 (Eric Nantz)","start":"2024-10-07","end":"2024-10-13","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule6ddd59a05eae2c8f78120f8c","calendarId":"1","name":"Colin Fay","backup_flag":true,"year":2024,"title":"BACKUP 2024-W42 (Colin Fay)","start":"2024-10-07","end":"2024-10-13","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedulef74fc650bc8df7fb63513052","calendarId":"1","name":"Colin Fay","backup_flag":false,"year":2024,"title":"2024-W43 (Colin Fay)","start":"2024-10-14","end":"2024-10-20","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule646e87d90962ec55852feec5","calendarId":"1","name":"Sam Parmar","backup_flag":true,"year":2024,"title":"BACKUP 2024-W43 (Sam Parmar)","start":"2024-10-14","end":"2024-10-20","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule45c638a42c25f2f01c566e01","calendarId":"1","name":"Sam Parmar","backup_flag":false,"year":2024,"title":"2024-W44 (Sam Parmar)","start":"2024-10-21","end":"2024-10-27","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule73e31750b9b3caeb2bffc875","calendarId":"1","name":"Batool Almarzouq","backup_flag":true,"year":2024,"title":"BACKUP 2024-W44 (Batool Almarzouq)","start":"2024-10-21","end":"2024-10-27","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedule7894fc9cca5a7751df970524","calendarId":"1","name":"Batool Almarzouq","backup_flag":false,"year":2024,"title":"2024-W45 (Batool Almarzouq)","start":"2024-10-28","end":"2024-11-03","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"scheduleea60c384cbf444d0e609f582","calendarId":"1","name":"Ryo Nakagawara","backup_flag":true,"year":2024,"title":"BACKUP 2024-W45 (Ryo Nakagawara)","start":"2024-10-28","end":"2024-11-03","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulee0be6939829092677e1b7875","calendarId":"1","name":"Ryo Nakagawara","backup_flag":false,"year":2024,"title":"2024-W46 (Ryo Nakagawara)","start":"2024-11-04","end":"2024-11-10","backgroundColor":"steelblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule8db58e93e24c360e8644be67","calendarId":"1","name":"Jon Calder","backup_flag":true,"year":2024,"title":"BACKUP 2024-W46 (Jon Calder)","start":"2024-11-04","end":"2024-11-10","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule00af93fa00f242838edf4d39","calendarId":"1","name":"Jon Calder","backup_flag":false,"year":2024,"title":"2024-W47 (Jon Calder)","start":"2024-11-11","end":"2024-11-17","backgroundColor":"indianred","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule5fb8817523842c5d0c64f61a","calendarId":"1","name":"Tony ElHabr","backup_flag":true,"year":2024,"title":"BACKUP 2024-W47 (Tony ElHabr)","start":"2024-11-11","end":"2024-11-17","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule55cb560d46ba96f9cc513a61","calendarId":"1","name":"Tony ElHabr","backup_flag":false,"year":2024,"title":"2024-W48 (Tony ElHabr)","start":"2024-11-18","end":"2024-11-24","backgroundColor":"greenyellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule1e18b6efa653a4ce12e9dd4a","calendarId":"1","name":"Jonathan Carroll","backup_flag":true,"year":2024,"title":"BACKUP 2024-W48 (Jonathan Carroll)","start":"2024-11-18","end":"2024-11-24","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"scheduleb4ba90ae923752d963c53766","calendarId":"1","name":"Jonathan Carroll","backup_flag":false,"year":2024,"title":"2024-W49 (Jonathan Carroll)","start":"2024-11-25","end":"2024-12-01","backgroundColor":"orange","color":null},{"category":"allday","dueDateClass":"","id":"scheduled72e55f872c1985a6a3d21a1","calendarId":"1","name":"Eric Nantz","backup_flag":true,"year":2024,"title":"BACKUP 2024-W49 (Eric Nantz)","start":"2024-11-25","end":"2024-12-01","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule753e2b4d201ea05c4dc6a588","calendarId":"1","name":"Eric Nantz","backup_flag":false,"year":2024,"title":"2024-W50 (Eric Nantz)","start":"2024-12-02","end":"2024-12-08","backgroundColor":"midnightblue","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule95cfe11a78f86fc7301d5803","calendarId":"1","name":"Colin Fay","backup_flag":true,"year":2024,"title":"BACKUP 2024-W50 (Colin Fay)","start":"2024-12-02","end":"2024-12-08","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule67fd588c6d29da1837bf0503","calendarId":"1","name":"Colin Fay","backup_flag":false,"year":2024,"title":"2024-W51 (Colin Fay)","start":"2024-12-09","end":"2024-12-15","backgroundColor":"yellow","color":null},{"category":"allday","dueDateClass":"","id":"schedule50c9806c0479220f7d16238f","calendarId":"1","name":"Sam Parmar","backup_flag":true,"year":2024,"title":"BACKUP 2024-W51 (Sam Parmar)","start":"2024-12-09","end":"2024-12-15","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedulea07be42908a27da477659fdb","calendarId":"1","name":"Sam Parmar","backup_flag":false,"year":2024,"title":"2024-W52 (Sam Parmar)","start":"2024-12-16","end":"2024-12-22","backgroundColor":"purple","color":"white"},{"category":"allday","dueDateClass":"","id":"schedule185c2bddb8c527aa7d79f939","calendarId":"1","name":"Batool Almarzouq","backup_flag":true,"year":2024,"title":"BACKUP 2024-W52 (Batool Almarzouq)","start":"2024-12-16","end":"2024-12-22","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedule328ba640fe66aa636ea9934b","calendarId":"1","name":"Batool Almarzouq","backup_flag":false,"year":2024,"title":"2024-W53 (Batool Almarzouq)","start":"2024-12-23","end":"2024-12-29","backgroundColor":"khaki","color":null},{"category":"allday","dueDateClass":"","id":"schedulee6ab642a343709d6af1f0db7","calendarId":"1","name":"Ryo Nakagawara","backup_flag":true,"year":2024,"title":"BACKUP 2024-W53 (Ryo Nakagawara)","start":"2024-12-23","end":"2024-12-29","backgroundColor":"steelblue","color":"white"}],"navigation":true,"events":[],"navigationOptions":{"today_label":"Today","prev_label":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 256 256\" class=\"phosphor-svg\" height=\"1.33em\" fill=\"currentColor\" style=\"vertical-align:-0.25em;\">\n  <path d=\"M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z\"><\/path>\n  <title>caret-left-light<\/title>\n<\/svg>","next_label":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 256 256\" class=\"phosphor-svg\" height=\"1.33em\" fill=\"currentColor\" style=\"vertical-align:-0.25em;\">\n  <path d=\"M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z\"><\/path>\n  <title>caret-right-light<\/title>\n<\/svg>","class":" bttn-bordered bttn-sm bttn-primary","fmt_date":"YYYY-MM-DD","sep_date":" ~ "}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="reactable html-widget html-fill-item html-fill-container" id="htmlwidget-c73aeeebcf767b841cc9" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c73aeeebcf767b841cc9">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"issue":["2024-W01","2024-W02","2024-W03","2024-W04","2024-W05","2024-W06","2024-W07","2024-W08","2024-W09","2024-W10","2024-W11","2024-W12","2024-W13","2024-W14","2024-W15","2024-W16","2024-W17","2024-W18","2024-W19","2024-W20","2024-W21","2024-W22","2024-W23","2024-W24","2024-W25","2024-W26","2024-W27","2024-W28","2024-W29","2024-W30","2024-W31","2024-W32","2024-W33","2024-W34","2024-W35","2024-W36","2024-W37","2024-W38","2024-W39","2024-W40","2024-W41","2024-W42","2024-W43","2024-W44","2024-W45","2024-W46","2024-W47","2024-W48","2024-W49","2024-W50","2024-W51","2024-W52"],"start":["2024-01-01","2024-01-08","2024-01-15","2024-01-22","2024-01-29","2024-02-05","2024-02-12","2024-02-19","2024-02-26","2024-03-04","2024-03-11","2024-03-18","2024-03-25","2024-04-01","2024-04-08","2024-04-15","2024-04-22","2024-04-29","2024-05-06","2024-05-13","2024-05-20","2024-05-27","2024-06-03","2024-06-10","2024-06-17","2024-06-24","2024-07-01","2024-07-08","2024-07-15","2024-07-22","2024-07-29","2024-08-05","2024-08-12","2024-08-19","2024-08-26","2024-09-02","2024-09-09","2024-09-16","2024-09-23","2024-09-30","2024-10-07","2024-10-14","2024-10-21","2024-10-28","2024-11-04","2024-11-11","2024-11-18","2024-11-25","2024-12-02","2024-12-09","2024-12-16","2024-12-23"],"end":["2024-01-07","2024-01-14","2024-01-21","2024-01-28","2024-02-04","2024-02-11","2024-02-18","2024-02-25","2024-03-03","2024-03-10","2024-03-17","2024-03-24","2024-03-31","2024-04-07","2024-04-14","2024-04-21","2024-04-28","2024-05-05","2024-05-12","2024-05-19","2024-05-26","2024-06-02","2024-06-09","2024-06-16","2024-06-23","2024-06-30","2024-07-07","2024-07-14","2024-07-21","2024-07-28","2024-08-04","2024-08-11","2024-08-18","2024-08-25","2024-09-01","2024-09-08","2024-09-15","2024-09-22","2024-09-29","2024-10-06","2024-10-13","2024-10-20","2024-10-27","2024-11-03","2024-11-10","2024-11-17","2024-11-24","2024-12-01","2024-12-08","2024-12-15","2024-12-22","2024-12-29"],"primary_curator":["Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq"],"primary_picture":["https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png"],"backup_curator":["Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara","Jon Calder","Tony ElHabr","Jonathan Carroll","Eric Nantz","Colin Fay","Sam Parmar","Batool Almarzouq","Ryo Nakagawara"],"backup_picture":["https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png","https://github.com/jonmcalder.png","https://github.com/tonyelhabr.png","https://github.com/jonocarroll.png","https://github.com/rpodcast.png","https://github.com/ColinFay.png","https://github.com/parmsam.png","https://github.com/BatoolMM.png","https://github.com/Ryo-N7.png"]},"columns":[{"id":"issue","name":"Issue","type":["glue","character"]},{"id":"start","name":"Start","type":"Date"},{"id":"end","name":"End","type":"Date"},{"id":"primary_curator","name":"Curator","type":"character","cell":[{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"style":{"display":"flex","align-items":"center"}},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]}]},{"id":"primary_picture","name":"primary_picture","type":"character","show":false},{"id":"backup_curator","name":"Backup","type":"character","cell":[{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jon Calder","src":"https://github.com/jonmcalder.png","className":"imageclass"},"children":[]},"Jon Calder"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Tony ElHabr","src":"https://github.com/tonyelhabr.png","className":"imageclass"},"children":[]},"Tony ElHabr"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Jonathan Carroll","src":"https://github.com/jonocarroll.png","className":"imageclass"},"children":[]},"Jonathan Carroll"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Eric Nantz","src":"https://github.com/rpodcast.png","className":"imageclass"},"children":[]},"Eric Nantz"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Colin Fay","src":"https://github.com/ColinFay.png","className":"imageclass"},"children":[]},"Colin Fay"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Sam Parmar","src":"https://github.com/parmsam.png","className":"imageclass"},"children":[]},"Sam Parmar"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Batool Almarzouq","src":"https://github.com/BatoolMM.png","className":"imageclass"},"children":[]},"Batool Almarzouq"]},{"name":"div","attribs":{"className":"namecolumn"},"children":[{"name":"img","attribs":{"alt":"Ryo Nakagawara","src":"https://github.com/Ryo-N7.png","className":"imageclass"},"children":[]},"Ryo Nakagawara"]}]},{"id":"backup_picture","name":"backup_picture","type":"character","show":false}],"dataKey":"ee020d16ff2a681e657ef7f0675cb4f6"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+
+
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
+</script>
+  
+
+
+
+</body></html>
