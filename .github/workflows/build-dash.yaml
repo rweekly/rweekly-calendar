@@ -51,17 +51,3 @@ jobs:
         NEXTCLOUD_USER: ${{ secrets.NEXTCLOUD_USER }}
         NEXTCLOUD_PASSWORD: ${{ secrets.NEXTCLOUD_PASSWORD }}
 
-    - name: Was the dashboard updated?
-      id: dashboard-updated
-      run: |
-        if [[ $(git status --porcelain -- index.html index_files/) ]]; then
-          echo "has_update=true" >> "$GITHUB_OUTPUT"
-        fi
-
-    - name: Render and Publish to GH Pages
-      uses: quarto-dev/quarto-actions/publish@v2
-      with:
-        target: gh-pages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
