@@ -21,7 +21,7 @@ list(
   tar_age(
     cal_data,
     get_cal_data(),
-    age = as.difftime(3, units = "days")
+    age = as.difftime(1, units = "days")
   ),
   # obtain number of rweekly issues
   tar_age(
