@@ -9,7 +9,7 @@ library(tarchetypes)
 
 # Set target options:
 tar_option_set(
-  packages = c("caldav", "calendar", "tibble", "dplyr", "lubridate", "stringr", "gh") # packages that your targets need to run
+  packages = c("caldav", "calendar", "tibble", "dplyr", "lubridate", "stringr", "gh", "quarto") # packages that your targets need to run
 )
 
 # Run the R scripts in the R/ folder with your custom functions:
