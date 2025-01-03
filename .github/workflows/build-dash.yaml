@@ -38,11 +38,8 @@ jobs:
       run: |
         nix-build
 
-    - name: Set up Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
-
     - name: Render and Publish
-      uses: quarto-dev/quarto-actions/publish@v2
+      uses: b-rodrigues/quarto-nix-actions/publish@main
       with:
         target: gh-pages
         path: index.qmd
