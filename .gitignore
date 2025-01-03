@@ -6,10 +6,14 @@
 .DS_Store
 .Renviron
 
-# container-specific files
-.devcontainer/.rstudio_config/*
-!.devcontainer/.rstudio_config/README.md
-.devcontainer/.env
-
+# Quarto files
 /.quarto/
 _site/
+*.html
+index_files/*
+
+# Nix files
+result
+
+# positron files
+.vdoc.r
