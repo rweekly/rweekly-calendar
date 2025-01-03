@@ -38,9 +38,10 @@ jobs:
       run: |
         nix-build
 
-    - name: Publish to GitHub Pages (and render)
-      uses: b-rodrigues/quarto-nix-actions/publish@main
+    - name: Render and Publish
+      uses: quarto-dev/quarto-actions/publish@v2
       with:
         target: gh-pages
+        path: index.qmd
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
