@@ -2,31 +2,28 @@ curator_table <- function(cal_df) {
   curator_df <- create_curator_df()
 
   # primary curator set
-  df1 <- processed_cal_data |>
-    filter(!backup_flag) |>
-    rename(primary_curator = name) |>
-    mutate(issue_index = row_number()) |>
-    select(-backup_flag) |>
+  df1 <- cal_df|>
+    dplyr::select(-backup) |>
+    rename(primary_curator = curator) |>
     left_join(
-      select(curator_df, primary_curator = name, primary_picture = picture),
+      dplyr::select(curator_df, primary_curator = name, primary_picture = picture),
       by = "primary_curator"
-    )
+    ) |>
+    dplyr::select(issue_id, from, to, primary_curator, primary_picture)
 
   # backup curator set
-  df2 <- processed_cal_data |>
-    filter(backup_flag) |>
-    rename(backup_curator = name) |>
-    mutate(issue_index = row_number()) |>
-    select(issue_index, backup_curator) |>
+  df2 <- cal_df|>
+    dplyr::select(-curator) |>
+    rename(backup_curator = backup) |>
     left_join(
-      select(curator_df, backup_curator = name, backup_picture = picture),
+      dplyr::select(curator_df, backup_curator = name, backup_picture = picture),
       by = "backup_curator"
-    )
+    ) |>
+    dplyr::select(issue_id, backup_curator, backup_picture)
 
   # combine and do final processing
-  df <- left_join(df1, df2, by = "issue_index") |>
-    mutate(issue = glue::glue("{year}-W{stringr::str_pad(issue_index, width = 2, side = 'left', pad = '0')}")) |>
-    select(issue, start, end, primary_curator, primary_picture, backup_curator, backup_picture)
+  df <- left_join(df1, df2, by = "issue_id") |>
+    select(issue_id, start = from, end = to, primary_curator, primary_picture, backup_curator, backup_picture)
 
   # df <- processed_cal_data |>
   #   left_join(curator_df, by = "name") |>
@@ -45,7 +42,7 @@ curator_table <- function(cal_df) {
   tbl <- reactable(
     df,
     columns = list(
-      issue = colDef(name = "Issue"),
+      issue_id = colDef(name = "Issue"),
       start = colDef(name = "Start"),
       end = colDef(name = "End"),
       primary_curator = colDef(

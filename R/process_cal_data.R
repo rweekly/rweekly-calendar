@@ -1,30 +1,28 @@
-process_cal_data <- function(cal_df, year = 2024) {
-  curator_df <- create_curator_df()
+process_cal_data <- function(cal_df) {
+  # initalize curator data frame
+  curator_df <- create_curator_df() |>
+    dplyr::select(curator = name, calendar_color, name_color)
 
+  # prepare primary curator schedule
   processed_cal_df <- cal_df |>
-    mutate(
-      backup_flag = stringr::str_detect(SUMMARY, "^BACKUP"),
-      year = lubridate::year(`DTSTART;VALUE=DATE`),
+    dplyr::left_join(curator_df, by = "curator") |>
+    dplyr::mutate(
+      calendarId = 1,
+      title = glue::glue("{issue_id} ({curator})"),
+      body = glue::glue("Backup curator: {backup}"),
       category = "allday"
     ) |>
-    filter(year == !!year) |>
-    select(
-      name = CATEGORIES,
-      backup_flag,
-      year,
-      title = SUMMARY,
-      start = `DTSTART;VALUE=DATE`,
-      end = `DTEND;VALUE=DATE`,
-      backgroundColor = COLOR,
-      category
+    dplyr::select(
+      calendarId,
+      title,
+      body,
+      start = from,
+      end = to,
+      category,
+      backgroundColor = calendar_color,
+      color = name_color
     ) |>
-    mutate(
-      color = case_when(
-        backgroundColor %in% c("midnightblue", "purple", "steelblue", "indianred") ~ "white",
-        TRUE ~ NA_character_
-      )
-    ) |>
-    arrange(start)
+    dplyr::arrange(start)
 
   return(processed_cal_df)
 }

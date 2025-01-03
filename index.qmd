@@ -13,13 +13,15 @@ execute:
 #| label: setup
 #| include: false
 library(dplyr)
-library(targets)
 library(toastui)
-library(epoxy)
 library(reactable)
 library(htmltools)
 
-tar_source("R/curator_table.R")
+# load supporting functions
+source("R/create_curator_df.R")
+source("R/import_schedule_functions.R")
+source("R/process_cal_data.R")
+source("R/curator_table.R")
 ```
 
 ```{css}
@@ -28,36 +30,11 @@ tar_source("R/curator_table.R")
 }
 ```
 
-
-```{r}
-#| label: load-cal-target
-#| include: false
-tar_load(c(processed_cal_data, rweekly_issue_count))
-tar_source()
-```
-
 # Schedule
 
-## Row
-
 ```{r}
-#| content: valuebox
-#| title: "Curators"
-#| icon: person-workspace
-#| color: primary
-list(
-  value = length(unique(processed_cal_data$name))
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Issues Curated"
-#| icon: newspaper
-#| color: primary
-list(
-  value = rweekly_issue_count
-)
+cal_df <- import_schedule_data()
+processed_cal_data <- process_cal_data(cal_df)
 ```
 
 ## Row
@@ -80,5 +57,5 @@ toastui::calendar(
 
 
 ```{r}
-curator_table(processed_cal_data)
+curator_table(cal_df)
 ```

@@ -24,30 +24,23 @@ jobs:
 
     - uses: actions/checkout@v3
 
-    - name: Set up Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
+    - name: Install Nix
+      uses: DeterminateSystems/nix-installer-action@main
       with:
-        version: pre-release
+        logger: pretty
+        log-directives: nix_installer=trace
+        backtrace: full
+  
+    - name: Nix cache
+      uses: DeterminateSystems/magic-nix-cache-action@main
 
-    - uses: r-lib/actions/setup-r@v2
+    - name: Build development environment
+      run: |
+        nix-build
 
-    - name: Add Ubuntu dependencies
-      run: sudo apt-get install libglpk40
-
-    - uses: r-lib/actions/setup-renv@v2
-
-    - name: Cache targets data
-      uses: actions/cache@v3
+    - name: Publish to GitHub Pages (and render)
+      uses: b-rodrigues/quarto-nix-actions/publish@main
       with:
-          path: _targets
-          key: ${{ runner.os }}-targets-v1-${{ hashFiles('**/cache.log') }}
-          restore-keys: |
-              ${{ runner.os }}-targets-v1-
-
-    - name: Build Pipeline and Dashboard
-      run: Rscript -e 'targets::tar_make()'
+        target: gh-pages
       env:
-        CALDAV_URL: ${{ secrets.CALDAV_URL }}
-        NEXTCLOUD_USER: ${{ secrets.NEXTCLOUD_USER }}
-        NEXTCLOUD_PASSWORD: ${{ secrets.NEXTCLOUD_PASSWORD }}
-
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
