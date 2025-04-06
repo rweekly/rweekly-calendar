@@ -2,7 +2,7 @@
 library(rix)
 
 rix(
-  date = "2024-12-14",
+  date = "2025-01-14",
   project_path = getwd(),
   r_pkgs = c(
     "tibble",
@@ -19,6 +19,7 @@ rix(
     "htmltools",
     "purrr"
   ),
-  ide = "other",
+  system_pkgs = c("quarto"),
+  ide = "none",
   overwrite = TRUE
 )
