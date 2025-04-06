@@ -28,24 +28,37 @@ source("R/curator_table.R")
 .imageclass {
   height: 1.3rem;
 }
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 ```
 
 # Schedule
 
 ```{r}
-cal_df <- import_schedule_data()
-processed_cal_data <- process_cal_data(cal_df)
+# import schedule data from public API endpoint
+raw_schedule_df <- import_schedule_data()
+
+# import curator data from public API endpoint
+raw_curator_df <- import_curator_data()
+
+# derive a processed data set for use with calendar
+processed_cal_data <- process_cal_data(raw_schedule_df, raw_curator_df)
 ```
 
-## Row
-
-### Column {width="50%"}
+## Row {height=60%}
 
 ```{r}
 toastui::calendar(
   data = processed_cal_data,
   view = "month",
-  navigation = TRUE
+  navigation = TRUE,
+  useDetailPopup = FALSE,
+  useCreationPopup = FALSE
 ) |>
   toastui::cal_month_options(
     startDayOfWeek = 1,
@@ -53,9 +66,8 @@ toastui::calendar(
   )
 ```
 
-### Column {width="50%"}
-
+## Row {height="40%"}
 
 ```{r}
-curator_table(cal_df)
+create_schedule_table(raw_schedule_df, raw_curator_df)
 ```
