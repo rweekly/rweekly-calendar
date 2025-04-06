@@ -1,12 +1,14 @@
-process_cal_data <- function(cal_df) {
+process_cal_data <- function(cal_df, curator_df) {
   # initalize curator data frame
-  curator_df <- create_curator_df() |>
-    dplyr::select(curator = name, calendar_color, name_color)
-
+  curator_df <- curator_df |>
+    dplyr::select(curator = real_name, calendar_color, name_color)
+  
   # prepare primary curator schedule
   processed_cal_df <- cal_df |>
     dplyr::left_join(curator_df, by = "curator") |>
     dplyr::mutate(
+      from = as.character(from),
+      to = as.character(to),
       calendarId = 1,
       title = glue::glue("{issue_id} ({curator})"),
       body = glue::glue("Backup curator: {backup}"),
@@ -20,7 +22,8 @@ process_cal_data <- function(cal_df) {
       end = to,
       category,
       backgroundColor = calendar_color,
-      color = name_color
+      color = name_color,
+      raw = curator
     ) |>
     dplyr::arrange(start)
 

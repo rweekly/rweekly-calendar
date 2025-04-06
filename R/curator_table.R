@@ -1,75 +1,71 @@
-curator_table <- function(cal_df) {
-  curator_df <- create_curator_df()
-
+create_schedule_table <- function(schedule_df, curator_df) {
   # primary curator set
-  df1 <- cal_df|>
+  df1 <- schedule_df|>
     dplyr::select(-backup) |>
-    rename(primary_curator = curator) |>
-    left_join(
-      dplyr::select(curator_df, primary_curator = name, primary_picture = picture),
+    dplyr::rename(primary_curator = curator) |>
+    dplyr::left_join(
+      dplyr::select(curator_df, primary_curator = real_name, primary_picture = image_32),
       by = "primary_curator"
     ) |>
     dplyr::select(issue_id, from, to, primary_curator, primary_picture)
 
   # backup curator set
-  df2 <- cal_df|>
+  df2 <- schedule_df|>
     dplyr::select(-curator) |>
-    rename(backup_curator = backup) |>
-    left_join(
-      dplyr::select(curator_df, backup_curator = name, backup_picture = picture),
+    dplyr::rename(backup_curator = backup) |>
+    dplyr::left_join(
+      dplyr::select(curator_df, backup_curator = real_name, backup_picture = image_32),
       by = "backup_curator"
     ) |>
     dplyr::select(issue_id, backup_curator, backup_picture)
 
   # combine and do final processing
-  df <- left_join(df1, df2, by = "issue_id") |>
-    select(issue_id, start = from, end = to, primary_curator, primary_picture, backup_curator, backup_picture)
-
-  # df <- processed_cal_data |>
-  #   left_join(curator_df, by = "name") |>
-  #   mutate(role = case_when(
-  #     backup_flag ~ "backup",
-  #     TRUE ~ "primary"
-  #   )) |>
-  #   select(picture, name, role, start, end, year) |>
-  #   group_by(start, end) |>
-  #   mutate(issue_index = cur_group_id()) |>
-  #   ungroup() |>
-  #   mutate(issue = glue::glue("{year}-W{stringr::str_pad(issue_index, width = 2, side = 'left', pad = '0')}"))
-    #pivot_wider(names_from = role, values_from = name)
+  df <- dplyr::left_join(df1, df2, by = "issue_id") |>
+    dplyr::select(issue_id, start = from, end = to, primary_curator, primary_picture, backup_curator, backup_picture)
 
   # define reactable
-  tbl <- reactable(
+  tbl <- reactable::reactable(
     df,
     columns = list(
-      issue_id = colDef(name = "Issue"),
-      start = colDef(name = "Start"),
-      end = colDef(name = "End"),
-      primary_curator = colDef(
+      issue_id = reactable::colDef(name = "Issue"),
+      start = reactable::colDef(name = "Start"),
+      end = reactable::colDef(name = "End"),
+      primary_curator = reactable::colDef(
         name = "Curator",
         cell = function(value, index) {
           pic <- df$primary_picture[index]
-          div(
-            style = "display: flex; align-items: center;",
-            img(class = "imageclass", alt = value, src = pic),
-            value
+          htmltools::div(
+            class = "sidebar-title",
+            htmltools::tags$img(src = pic, alt = "User Picture", class = "profile-pic"),
+            htmltools::span(
+              class = "welcome-text",
+              value
+            )
           )
         }
       ),
-      primary_picture = colDef(show = FALSE),
-      backup_curator = colDef(
+      primary_picture = reactable::colDef(show = FALSE),
+      backup_curator = reactable::colDef(
         name = "Backup",
         cell = function(value, index) {
           pic <- df$backup_picture[index]
-          div(
-            class = "namecolumn",
-            img(class = "imageclass", alt = value, src = pic),
-            value
+          htmltools::div(
+            class = "sidebar-title",
+            htmltools::tags$img(src = pic, alt = "User Picture", class = "profile-pic"),
+            htmltools::span(
+              class = "welcome-text",
+              value
+            )
           )
         }
       ),
-      backup_picture = colDef(show = FALSE)
-    )
+      backup_picture = reactable::colDef(show = FALSE)
+    ),
+    defaultColDef = reactable::colDef(vAlign = "center"),
+    defaultPageSize = 5,
+    showPageSizeOptions = TRUE,
+    pageSizeOptions = c(5, 10, 20),
+    selection = "single"
   )
 
   return(tbl)
