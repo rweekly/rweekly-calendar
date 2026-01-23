@@ -30,35 +30,37 @@ create_schedule_table <- function(schedule_df, curator_df) {
       issue_id = reactable::colDef(name = "Issue"),
       start = reactable::colDef(name = "Start"),
       end = reactable::colDef(name = "End"),
-      primary_curator = reactable::colDef(
-        name = "Curator",
-        cell = function(value, index) {
-          pic <- df$primary_picture[index]
-          htmltools::div(
-            class = "sidebar-title",
-            htmltools::tags$img(src = pic, alt = "User Picture", class = "profile-pic"),
-            htmltools::span(
-              class = "welcome-text",
-              value
-            )
-          )
-        }
-      ),
+      primary_curator = reactable::colDef(name = "Curator"),
+      # primary_curator = reactable::colDef(
+      #   name = "Curator",
+      #   cell = function(value, index) {
+      #     pic <- df$primary_picture[index]
+      #     htmltools::div(
+      #       class = "sidebar-title",
+      #       htmltools::tags$img(src = pic, alt = "User Picture", class = "profile-pic"),
+      #       htmltools::span(
+      #         class = "welcome-text",
+      #         value
+      #       )
+      #     )
+      #   }
+      # ),
       primary_picture = reactable::colDef(show = FALSE),
-      backup_curator = reactable::colDef(
-        name = "Backup",
-        cell = function(value, index) {
-          pic <- df$backup_picture[index]
-          htmltools::div(
-            class = "sidebar-title",
-            htmltools::tags$img(src = pic, alt = "User Picture", class = "profile-pic"),
-            htmltools::span(
-              class = "welcome-text",
-              value
-            )
-          )
-        }
-      ),
+      backup_curator = reactable::colDef(name = "Backup"),
+      # backup_curator = reactable::colDef(
+      #   name = "Backup",
+      #   cell = function(value, index) {
+      #     pic <- df$backup_picture[index]
+      #     htmltools::div(
+      #       class = "sidebar-title",
+      #       htmltools::tags$img(src = pic, alt = "User Picture", class = "profile-pic"),
+      #       htmltools::span(
+      #         class = "welcome-text",
+      #         value
+      #       )
+      #     )
+      #   }
+      # ),
       backup_picture = reactable::colDef(show = FALSE)
     ),
     defaultColDef = reactable::colDef(vAlign = "center"),
