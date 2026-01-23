@@ -17,7 +17,9 @@ rix(
     "reactable",
     "quarto",
     "htmltools",
-    "purrr"
+    "purrr",
+    "pins",
+    "paws.storage"
   ),
   system_pkgs = c("quarto"),
   ide = "none",
